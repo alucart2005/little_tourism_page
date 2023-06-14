@@ -67,7 +67,98 @@ main .banner .content p {
   color: #fff;
   font-size: 1.2em;
 }
-main .banner .content .btn {
+main .banner .fitBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.7;
+}
+main .about {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .about .contentBx {
+  min-width: 50%;
+  width: 50%;
+  text-align: end;
+  padding-right: 40px;
+}
+main .about .contentBx .tittleText {
+  font-weight: 600;
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+main .about .contentBx .text {
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+main .about .imgBx {
+  position: relative;
+  min-width: 50%;
+  width: 50%;
+  min-height: 500px;
+  background: red;
+}
+main .about .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+main .banner2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .banner2 .fitBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.7;
+}
+main .banner2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1000;
+  background: linear-gradient(to top, #111, transparent);
+}
+main .banner2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #111, transparent);
+}
+
+a.btn {
+  position: relative;
   display: inline-block;
   background: #fff;
   color: #111;
@@ -77,17 +168,8 @@ main .banner .content .btn {
   text-decoration: none;
   font-size: 1.2em;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
-main .banner .content .btn:hover {
+a.btn:hover {
   transform: scale(0.98);
-}
-main .banner .fitBg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0.7;
 }/*# sourceMappingURL=styles.css.map */
