@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 body{
   background: #111;
@@ -378,5 +379,18 @@ a.btn{
         }
       }
     }
+  }
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #272928;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(73, 77, 174);
+  border-radius: 5px;
+  &:hover{
+    background: rgb(170, 75, 75);
   }
 }

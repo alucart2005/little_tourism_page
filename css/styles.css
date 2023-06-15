@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -375,4 +376,19 @@ a.btn:hover {
     text-decoration: none;
     font-weight: 500;
   }
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #272928;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(73, 77, 174);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(170, 75, 75);
 }/*# sourceMappingURL=styles.css.map */
