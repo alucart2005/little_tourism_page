@@ -92,11 +92,6 @@ main{
         font-size: 2em;
         margin-bottom: 10px;
       }
-      .text{
-        color: #fff;
-        font-size: 1em;
-        line-height: 1.5em;
-      }
     }
     .imgBx{
       position: relative;
@@ -152,6 +147,64 @@ main{
       background: linear-gradient(to bottom, #111, transparent);
     }
   }
+  .destination{
+    text-align: justify;
+    color: #fff;
+    .content{
+      text-align: center;
+    }
+    .destinationList{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      &:hover{
+        .box{
+          opacity: 0.2;
+        }
+      }
+      .box{
+        position: relative;
+        min-width: 350px;
+        height: 450px;
+        background: red;
+        transition: 0.5s;
+        margin: 10px;
+        overflow: hidden;
+        border-radius: 10px;
+        &:hover{
+          opacity: 1;
+        }
+        .imgBx{
+          position: relative;
+          width: 100%;
+          height: 400px;
+        }
+        .content{
+          width: 100%;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          h3{
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            font-weight: 500;
+            line-height: 1.2em;
+            span{
+              color : #fff;
+              font-size: 0.8em;
+              font-weight: 300;
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
   .banner3{
     position: relative;
     width: 100%;
@@ -191,8 +244,37 @@ main{
     }
 
   }
-
+  footer{
+    // background: #ad1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .sci{
+      position: relative;
+      display: flex;
+      li{
+        list-style: none;
+        a{
+          text-decoration: none;
+          margin: 0 20px;
+          img{
+            filter: invert(1);
+            max-width: 45px;
+          }
+        }
+      }
+    }
+    .copyright{
+      margin-top: 20px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 300;
+      color: #666;
+    }
+  }
 }
+
 a.btn{
   position: relative;
   display: inline-block;
@@ -208,4 +290,10 @@ a.btn{
   &:hover{
     transform: scale(0.98);
   }
+}
+
+.text{
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.5em;
 }
