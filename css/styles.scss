@@ -98,7 +98,6 @@ main{
       min-width: 50%;
       width: 50%;
       min-height: 500px;
-      background: red;
       img{
         position: absolute;
         top: 0;
@@ -150,6 +149,8 @@ main{
   .destination{
     text-align: justify;
     color: #fff;
+    text-align: center;
+
     .content{
       text-align: center;
     }
@@ -204,6 +205,7 @@ main{
         }
       }
     }
+
   }
   .banner3{
     position: relative;
@@ -271,16 +273,21 @@ main{
       font-size: 18px;
       font-weight: 300;
       color: #666;
+      text-align: center;
+      a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+      }
     }
   }
 }
-
 a.btn{
   position: relative;
   display: inline-block;
   background: #fff;
   color: #111;
-  padding: 10px 30px;
+  padding: 8px 30px;
   margin-top: 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -291,9 +298,50 @@ a.btn{
     transform: scale(0.98);
   }
 }
-
 .text{
   color: #fff;
   font-size: 1em;
   line-height: 1.5em;
+}
+
+@media (max-width: 600px){
+  section{
+    padding: 20px;
+  }
+  main{
+    .banner{
+      .content{
+        h2{
+          font-size: 2.5em;
+        }
+        p{
+          font-size: 1em;
+        }
+      }
+    }
+    .about{
+      flex-direction: column;
+      .contentBx{
+        width: 100%;
+        min-width: 100%;
+        text-align: center;
+        padding-right: 0px;
+      }
+      .imgBx{
+        position: relative;
+        min-width: 100%;
+        width: 100%;
+        padding-right: 0px;
+      }
+    }
+  
+
+
+
+
+
+
+
+
+  }
 }
