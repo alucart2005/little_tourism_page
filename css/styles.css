@@ -181,10 +181,19 @@ main .destination .destinationList .box .content {
 }
 main .destination .destinationList .box .content h3 {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(40, 50, 45, 0.5);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  width: 100%;
+  height: 17%;
   bottom: 0;
   color: #fff;
   font-weight: 500;
-  line-height: 1.2em;
+  line-height: 1.5em;
 }
 main .destination .destinationList .box .content h3 span {
   color: #fff;
