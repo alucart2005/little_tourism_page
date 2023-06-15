@@ -96,22 +96,6 @@ main .about .contentBx .tittleText {
   font-size: 2em;
   margin-bottom: 10px;
 }
-main .about .imgBx {
-  position: relative;
-  min-width: 50%;
-  width: 50%;
-  min-height: 500px;
-}
-main .about .imgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-}
 main .banner2 {
   position: relative;
   width: 100%;
@@ -266,6 +250,10 @@ main footer .sci li a img {
   filter: invert(1);
   max-width: 45px;
 }
+main footer .sci li a img:hover {
+  transform: rotate(-0.03turn);
+  filter: drop-shadow(0 30px 20px rgb(141, 76, 133)) invert(75%);
+}
 main footer .copyright {
   margin-top: 20px;
   color: #fff;
@@ -278,6 +266,10 @@ main footer .copyright a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+}
+
+section {
+  padding: 10px;
 }
 
 a.btn {
@@ -301,6 +293,23 @@ a.btn:hover {
   color: #fff;
   font-size: 1em;
   line-height: 1.5em;
+}
+
+.imgBx {
+  position: relative;
+  min-width: 50%;
+  width: 50%;
+  min-height: 500px;
+}
+.imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 
 @media (max-width: 600px) {
@@ -327,5 +336,43 @@ a.btn:hover {
     min-width: 100%;
     width: 100%;
     padding-right: 0px;
+    top: 30px;
+  }
+  main footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  main footer .sci {
+    position: relative;
+    display: flex;
+  }
+  main footer .sci li {
+    list-style: none;
+  }
+  main footer .sci li a {
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  main footer .sci li a img {
+    filter: invert(1);
+    max-width: 30px;
+  }
+  main footer .sci li a img:hover {
+    transform: rotate(0.05turn);
+  }
+  main footer .copyright {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 200;
+    color: #666;
+    text-align: center;
+  }
+  main footer .copyright a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
   }
 }/*# sourceMappingURL=styles.css.map */
