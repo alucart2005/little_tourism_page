@@ -5,7 +5,7 @@ My first steps in HTML and CSS
 
 **NAPOLEON ANAYA ROMERO**
 
--	[https://www.linkedin.com/in/napoleon-de-jesus-anaya-romero-8872ba127/](https://www.linkedin.com/in/napoleon-de-jesus-anaya-romero-8872ba127/)
+-	[https://www.linkedin.com/in/napoleon-anaya/](https://www.linkedin.com/in/napoleon-anaya/)
 
 ## Preview PC
 
